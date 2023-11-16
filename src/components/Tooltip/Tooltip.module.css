@@ -1,0 +1,34 @@
+/* Tooltip.module.css */
+.tooltipContainer {
+    position: 'absolute';
+    display: 'inline-block';
+  }
+  
+  .tooltipText {
+    position: relative;
+    bottom: 95%; /* Place it at the bottom of the button */
+    left: 50%; /* Center it horizontally relative to the button */
+    transform: translateX(-50%, 0); /* Adjust horizontally to perfectly center */
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 2; /* Make sure it's above the button */
+    /* Add more styling as needed */
+  }
+
+  .downloadButtonTooltip {
+    position: absolute;
+    bottom: 90%; /* Adjust this as needed */
+    left: 21%; /* Center it horizontally relative to the button */
+    transform: translateX(-50%); /* Adjust horizontally for perfect centering */
+    /* Add your specific styling for this tooltip here */
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 2; /* Ensure it appears above other elements */
+  }
+  

@@ -1,0 +1,36 @@
+/* ContainerComponent.module.css */
+.container {
+    position: absolute;
+    top: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Ensures that children are laid out in a row */
+  }
+
+  /* ContainerComponent.module.css */
+.downloadButton {
+  border-radius: 50%; /* This ensures the button is round */
+  overflow: hidden;
+  position: absolute;
+  top: 2%; /* Adjust this value to move the button up, overlapping the top corners of the boxes */
+  left: 15%;  /* Centers the button in the container */
+  transform: translateX(-50%); /* Aligns the center of the button with the center of the container */
+  width: 80px; /* Size of the button */
+  height: 80px; /* Size of the button */
+  background: #007bff; /* Background color of the button */
+  color: white; /* Text color of the button */
+  border: none; /* Removes the border */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  
+}
+
+
+.icon {
+  position: relative; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(.125); /* Adjust scale as needed */
+  width: auto; /* You can adjust this as needed */
+  height: auto; /* You can adjust this as needed */
+  /* This centers the icon in the button and enlarges it */
+}

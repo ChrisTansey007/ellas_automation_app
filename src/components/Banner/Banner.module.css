@@ -1,0 +1,27 @@
+/* Banner.module.css */
+.banner {
+  width: 100%;
+  background-image: url('../../assets/images/bannerImage.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h1 {
+  background-color: #34568B; /* Deep blue color */
+  border-radius: 50px; /* Oval shape */
+  padding: 10px 10px; /* Adjust as needed */
+  color: white;
+  text-shadow:none;
+  font-size: 2.5rem; /* Large font size for prominence */
+  font-weight: 700; /* Bold font weight for impact */
+  font-family: 'Roboto', sans-serif; /* Example font family, assuming Roboto is imported */
+  margin: 0;
+  padding: 1.5rem; /* Adjust padding as needed */
+  display: inline-block;
+}
+

@@ -1,0 +1,68 @@
+.displayArea {
+  padding: 20px;
+   /* Stack the label and table vertically */
+  height: 60vh;
+  width: 80%;
+  max-width: 80%;
+  align-items: center;
+  overflow: hidden;
+}
+
+.displayArea h2 {
+  position: relative;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 100%; /* Match the width of the table */
+}
+
+.box {
+  position: relative;
+  overflow-y: auto; /* Allows vertical scrolling if needed */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+
+  background-color: grey;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  height: 45vh; /* Adjust height as needed */
+  width: 100%; /* Adjust width as needed to prevent word wrap */
+}
+
+
+.table {
+  width: 100%;
+  border-collapse: separate; /* Enable border spacing */
+  border-spacing: 0 1px; /* Horizontal and vertical spacing */
+  table-layout: auto; /* Dynamic column width based on content */
+}
+
+.table td, .table th {
+  padding: 4px; /* Increase padding for readability */
+  text-align: left; /* Align text to the left for consistency */
+  white-space: normal; /* Allow text wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px; /* Increased font size */
+  font-family: Arial, sans-serif; /* Sans-serif font for readability */
+}
+
+.table tr:nth-child(odd) {
+  color:black;
+  background-color: #f2f2f2; /* Alternating row colors (zebra-striping) */
+}
+
+.table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #fff; /* Fixed header with background */
+}
+
+@media (max-width: 600px) {
+  .table td, .table th {
+    padding: 4px; /* Smaller padding on smaller screens */
+  }
+  .displayArea {
+    width: 95%; /* Increased width for smaller screens */
+  }
+}
