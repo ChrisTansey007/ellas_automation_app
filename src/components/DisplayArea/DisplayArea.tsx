@@ -11,7 +11,8 @@ interface DisplayAreaProps {
 const DisplayArea: React.FC<DisplayAreaProps> = ({ title, flights }) => {
   const hasFlights = flights.length > 0;
 
-  
+  console.log("flights", flights)
+
   return (
     <div className={styles.displayArea}>
       <h2>{title}</h2>

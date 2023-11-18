@@ -7,10 +7,10 @@ import Tooltip from '../Tooltip/Tooltip';
 
 interface SideToolbarProps {
   onScrapeAndToggle: () => void;
-  ongoToFutureTools: () => void;
+  onGoToFutureTools: () => void;
 }
 
-const SideToolbar: React.FC<SideToolbarProps> = ({ onScrapeAndToggle, ongoToFutureTools  }) => {
+const SideToolbar: React.FC<SideToolbarProps> = ({ onScrapeAndToggle, onGoToFutureTools  }) => {
   return (
     <div className={styles.sideToolbar}>
       <button onClick={onScrapeAndToggle}>
@@ -18,7 +18,7 @@ const SideToolbar: React.FC<SideToolbarProps> = ({ onScrapeAndToggle, ongoToFutu
           <img src={scrapeIcon} alt="Get ILM Info" className={styles.icon} />
         </Tooltip>
       </button>
-      <button onClick={ongoToFutureTools}>
+      <button onClick={onGoToFutureTools}>
         <Tooltip text="Future Tools">
           <img src={futureToolIcon} alt="Future Tools" className={styles.icon} />
         </Tooltip>

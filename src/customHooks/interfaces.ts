@@ -22,3 +22,12 @@ export interface TransformedFlight {
   actualTime: string;
   status: string;
 }
+
+// Assuming the raw data structure is similar for both arrivals and departures
+export interface RawFlightData  {
+  0: string; // Flight Number or 'Flight'
+  1: string; // Origin/Destination or 'From'/'To'
+  2: string; // Scheduled Time or 'Scheduled'
+  3: string; // Actual Time or 'Actual'
+  4: string; // Status or 'Remarks'
+};
