@@ -1,5 +1,5 @@
 // Tooltip.tsx
-import React, { useState, FC, ReactElement } from 'react';
+import { useState, FC, ReactElement } from 'react';
 import styles from './Tooltip.module.css'; // assuming you have this CSS file
 
 interface TooltipProps {
