@@ -1,7 +1,7 @@
 // SideToolbar.tsx
 import React from 'react';
 import styles from './SideToolbar.module.css';
-import scrapeIcon from '../../assets/icons/scrapeicon.png';
+import scrapeIcon from '../../assets/icons/scrapeIcon.png';
 import futureToolIcon from '../../assets/icons/future_tool_icon.png';
 import Tooltip from '../Tooltip/Tooltip';
 
