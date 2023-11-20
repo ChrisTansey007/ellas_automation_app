@@ -27,7 +27,7 @@ export const useFlightData = (): UseFlightDataReturnType => {
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [error, setError] = useState<Error | null>(null);
 
-    const { data, refetch, loading, error: fetchDataError } = useFetchData('http://ec2-3-81-123-220.compute-1.amazonaws.com/scrape_ilm');
+    const { data, refetch, loading, error: fetchDataError } = useFetchData('http://ec2-3-81-123-220.compute-1.amazonaws.com:80/scrape_ilm');
 
     useEffect(() => {
         setIsLoading(loading);
