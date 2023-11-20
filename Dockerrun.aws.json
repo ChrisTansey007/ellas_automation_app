@@ -1,0 +1,36 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+      {
+        "name": "frontend",
+        "image": "your-aws-account-id.dkr.ecr.your-region.amazonaws.com/react-app",
+        "essential": true,
+        "memory": 128,
+        "portMappings": [
+          {
+            "hostPort": 80,
+            "containerPort": 80
+          }
+        ]
+      },
+      {
+        "name": "backend",
+        "image": "your-aws-account-id.dkr.ecr.your-region.amazonaws.com/flask-api",
+        "essential": true,
+        "memory": 128,
+        "portMappings": [
+          {
+            "hostPort": 5000,
+            "containerPort": 5000
+          }
+        ],
+        "environment": [
+          {
+            "name": "FLASK_ENV",
+            "value": "production"
+          }
+        ]
+      }
+    ]
+  }
+  

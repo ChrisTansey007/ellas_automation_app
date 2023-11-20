@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./path-to-react-app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    build: ./path-to-flask-app
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
